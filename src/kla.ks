@@ -97,7 +97,7 @@ function klaTranspose {
     parameter a.
     local m is a[1].
     local n is a[0].
-    if m = 1 and n = 1 {
+    if m = 1 or n = 1 {
         local b is a:copy.
         set b[0] to m.
         set b[1] to n.
