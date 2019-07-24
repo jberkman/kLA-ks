@@ -88,9 +88,9 @@ function klaLNorm {
     parameter a, l is 2.
     local x is 0.
     from { local i is a:length - 1. } until i < 2 step { set i to i - 1. } do {
-        set x to x + pow(a[i], l).
+        set x to x + a[i] ^ l.
     }
-    return pow(x, 1 / l).
+    return x ^ (1 / l).
 }
 
 function klaTranspose {
